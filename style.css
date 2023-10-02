@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding:0;
+}
+  
+  header {
+    height: 100vh;/* 100 Viewport Height = toute la hauteur de l'écran*/
+    background: url("images/fond.jpg") center bottom fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+header nav {
+  position: fixed; /*nav sera présente dans toutes les autres pages*/
+  top: 50%;
+  left: 2%;
+}
+header nav ul li{
+  font-weight: bold;
+  font-family: 'FuturaExtended';
+  src: url('FuturaExtended.eot');
+  src: url('FuturaExtended.eot?#iefix') format('embedded-opentype'),
+      url('FuturaExtended.woff2') format('woff2'),
+      url('FuturaExtended.woff') format('woff'),
+      url('FuturaExtended.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;;
+  list-style: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  text-shadow: 2px 2px 6px black;
+ }
+
+header nav ul li:nth-of-type(1) {
+  margin: 2px;
+  border-bottom: 4px solid white;
+
+}
+header div {
+    height: 250px;
+    width: 250px;
+    background-color: #333333;
+    border-radius: 50%;
+    display: flex;
+    justify-content:left ;
+    align-items:center;
+}
+ header h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: 'Brannboll Fet';
+  src: url('BrannbollFet.eot');
+  src: url('BrannbollFet.eot?#iefix') format('embedded-opentype'),
+      url('BrannbollFet.woff2') format('woff2'),
+      url('BrannbollFet.woff') format('woff'),
+      url('BrannbollFet.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+} 
+ 
+ main {
+  background:#333;
+  padding: 100px 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+ }
+ section{
+  display: flex;
+  justify-content:center ;
+  align-items:center;
+  flex-wrap: wrap;/*ce qui va mettre tes div les unes après les autres*/
+  width: 70%;
+ }
+ section div {
+  border-radius: 50%;
+  overflow: hidden;/* ce qui dépasse les div sera caché et par la suite avec la propriété border-radius, on aura des images rondes */
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+ }
+ section div img {
+  width: 100%;
+ }
+ footer p {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'FuturaExtended';
+  src: url('FuturaExtended.eot');
+  src: url('FuturaExtended.eot?#iefix') format('embedded-opentype'),
+      url('FuturaExtended.woff2') format('woff2'),
+      url('FuturaExtended.woff') format('woff'),
+      url('FuturaExtended.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;;
+  color: white;
+  text-shadow: 3px 3px 8px rgb(16, 16, 9);
+  background: grey;
+  height: 30px;
+  padding: 50px
+ }
+ p{
+  word-spacing: 1rem;/* farire l'espace entre les mots de texte*/
+ }
