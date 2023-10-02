@@ -2,6 +2,34 @@
     margin: 0;/* ca remplace le link reset*/
     padding:0;
 }
+/*************
+fonts
+***********/
+@font-face {
+  font-family: 'Brannboll Fet';
+  src: url(../fonts/);
+  src: url('../fonts/BrannbollFet.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BrannbollFet.woff2') format('woff2'),
+      url('../fonts/BrannbollFet.woff') format('woff'),
+      url('../fonts/BrannbollFet.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaExtended';
+  src: url('../fonts/FuturaExtended.eot');
+  src: url('../fonts/FuturaExtended.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/FuturaExtended.woff2') format('woff2'),
+      url('../fonts/FuturaExtended.woff') format('woff'),
+      url('../fonts/FuturaExtended.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*************fin fonts*****/
 
 html {
   scroll-behavior: smooth; /*ajoute un effet au scroll vers les a*/
@@ -54,15 +82,6 @@ header div {
   text-align: center;
   font-size: 40px;
   color: white;
-  font-family: 'Brannboll Fet';
-  src: url('BrannbollFet.eot');
-  src: url('BrannbollFet.eot?#iefix') format('embedded-opentype'),
-      url('BrannbollFet.woff2') format('woff2'),
-      url('BrannbollFet.woff') format('woff'),
-      url('BrannbollFet.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
 } 
  
  main {
