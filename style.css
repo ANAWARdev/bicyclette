@@ -9,7 +9,7 @@ html {
   
   header {
     height: 100vh;/* 100 Viewport Height = toute la hauteur de l'écran, c'est la hauteur complète de l'écran*/
-    background: url("images/fond.jpg") center bottom fixed;
+    background: url("images/fond.jpg")bottom right;/*tout le cote bas droit garde son apparence*/
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,26 +18,23 @@ html {
 header nav {
   position: fixed; /*nav sera présente dans toutes les autres pages*/
   top: 50%;
-  left: 2%;
+  left: 5%;
 }
-header nav ul li {
+header nav ul li a{
   font-weight: bold;
-  font-family: 'FuturaExtended';
-  src: url('FuturaExtended.eot');
-  src: url('FuturaExtended.eot?#iefix') format('embedded-opentype'),
-      url('FuturaExtended.woff2') format('woff2'),
-      url('FuturaExtended.woff') format('woff'),
-      url('FuturaExtended.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;;
-  list-style: none;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
-  padding: 10px;
-  text-shadow: 2px 2px 6px black;
+  text-decoration: none;
+  text-transform:uppercase;
   
- }
+ } 
+  header nav ul {
+    list-style: none;
+  }
+  header nav li {
+    padding: 10px 0;
+    text-shadow: 2px 2px 6px black;
+  }
 
 header nav ul li:nth-of-type(1) {
   margin: 2px;
